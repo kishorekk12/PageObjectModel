@@ -10,6 +10,7 @@ import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 
@@ -41,6 +42,8 @@ public class TestBase {
 		String browserName = prop.getProperty("browser");
 		
 		if(browserName.equals("chrome")){
+			ChromeOptions options = new ChromeOptions();
+			options.setBinary("C:/Program Files/Google/Chrome/Application/chrome.exe");
 			System.setProperty("webdriver.chrome.driver", "D:/Libs/chromedriver.exe");	
 			driver = new ChromeDriver(); 
 		}

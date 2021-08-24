@@ -20,6 +20,8 @@ public class FreeCrmTest {
 
 	@BeforeMethod
 	public void setUp() throws Exception {
+		ChromeOptions options = new ChromeOptions();
+		options.setBinary("C:/Program Files/Google/Chrome/Application/chrome.exe");
 		System.setProperty("webdriver.chrome.driver", "D:/Libs/chromedriver.exe");
 		driver = new ChromeDriver();
 		js = (JavascriptExecutor) driver;
