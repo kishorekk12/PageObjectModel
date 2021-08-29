@@ -43,8 +43,8 @@ public class TestBase {
 		
 		if(browserName.equals("chrome")){
 			ChromeOptions options = new ChromeOptions();
-			options.setBinary("C:/Program Files/Google/Chrome/Application/chrome.exe");
-			System.setProperty("webdriver.chrome.driver", "D:/Libs/chromedriver.exe");	
+			//options.setBinary("C:/Program Files/Google/Chrome/Application/chrome.exe");
+			System.setProperty("webdriver.chrome.driver", "C:/Users/lenovo/Desktop/Softwares/Drivers/chromedriver.exe");	
 			driver = new ChromeDriver(); 
 		}
 		else if(browserName.equals("FF")){
