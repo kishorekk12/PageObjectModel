@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('stage1') {
       steps {
-        git '\'https://github.com/kishorekk12/webAppExample.git\''
+        git 'https://github.com/kishorekk12/webAppExample.git\''
       }
     }
 
